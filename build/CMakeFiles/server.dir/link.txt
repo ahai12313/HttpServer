@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/server.dir/server.cpp.o -o server  libserver_lib.a 
+/usr/bin/g++ -g CMakeFiles/server.dir/server.cpp.o -o server  libserver_lib.a /usr/local/lib/libspdlog.a 

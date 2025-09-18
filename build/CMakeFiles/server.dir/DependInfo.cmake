@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahai/project/project11/server.cpp" "CMakeFiles/server.dir/server.cpp.o" "gcc" "CMakeFiles/server.dir/server.cpp.o.d"
+  "/home/ahai/HttpServer/server.cpp" "CMakeFiles/server.dir/server.cpp.o" "gcc" "CMakeFiles/server.dir/server.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ahai/project/project11/build/CMakeFiles/server_lib.dir/DependInfo.cmake"
+  "/home/ahai/HttpServer/build/CMakeFiles/server_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahai/project/project11
+CMAKE_SOURCE_DIR = /home/ahai/HttpServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahai/project/project11/build
+CMAKE_BINARY_DIR = /home/ahai/HttpServer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server_lib.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/server_lib.dir/flags.make
 CMakeFiles/server_lib.dir/src/HttpServer.cpp.o: CMakeFiles/server_lib.dir/flags.make
 CMakeFiles/server_lib.dir/src/HttpServer.cpp.o: ../src/HttpServer.cpp
 CMakeFiles/server_lib.dir/src/HttpServer.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/project/project11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_lib.dir/src/HttpServer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/HttpServer.cpp.o -MF CMakeFiles/server_lib.dir/src/HttpServer.cpp.o.d -o CMakeFiles/server_lib.dir/src/HttpServer.cpp.o -c /home/ahai/project/project11/src/HttpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_lib.dir/src/HttpServer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/HttpServer.cpp.o -MF CMakeFiles/server_lib.dir/src/HttpServer.cpp.o.d -o CMakeFiles/server_lib.dir/src/HttpServer.cpp.o -c /home/ahai/HttpServer/src/HttpServer.cpp
 
 CMakeFiles/server_lib.dir/src/HttpServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/HttpServer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/project/project11/src/HttpServer.cpp > CMakeFiles/server_lib.dir/src/HttpServer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/HttpServer.cpp > CMakeFiles/server_lib.dir/src/HttpServer.cpp.i
 
 CMakeFiles/server_lib.dir/src/HttpServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/HttpServer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/project/project11/src/HttpServer.cpp -o CMakeFiles/server_lib.dir/src/HttpServer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/HttpServer.cpp -o CMakeFiles/server_lib.dir/src/HttpServer.cpp.s
 
 CMakeFiles/server_lib.dir/src/Request.cpp.o: CMakeFiles/server_lib.dir/flags.make
 CMakeFiles/server_lib.dir/src/Request.cpp.o: ../src/Request.cpp
 CMakeFiles/server_lib.dir/src/Request.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/project/project11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server_lib.dir/src/Request.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/Request.cpp.o -MF CMakeFiles/server_lib.dir/src/Request.cpp.o.d -o CMakeFiles/server_lib.dir/src/Request.cpp.o -c /home/ahai/project/project11/src/Request.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server_lib.dir/src/Request.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/Request.cpp.o -MF CMakeFiles/server_lib.dir/src/Request.cpp.o.d -o CMakeFiles/server_lib.dir/src/Request.cpp.o -c /home/ahai/HttpServer/src/Request.cpp
 
 CMakeFiles/server_lib.dir/src/Request.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/Request.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/project/project11/src/Request.cpp > CMakeFiles/server_lib.dir/src/Request.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/Request.cpp > CMakeFiles/server_lib.dir/src/Request.cpp.i
 
 CMakeFiles/server_lib.dir/src/Request.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/Request.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/project/project11/src/Request.cpp -o CMakeFiles/server_lib.dir/src/Request.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/Request.cpp -o CMakeFiles/server_lib.dir/src/Request.cpp.s
 
 CMakeFiles/server_lib.dir/src/Response.cpp.o: CMakeFiles/server_lib.dir/flags.make
 CMakeFiles/server_lib.dir/src/Response.cpp.o: ../src/Response.cpp
 CMakeFiles/server_lib.dir/src/Response.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/project/project11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server_lib.dir/src/Response.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/Response.cpp.o -MF CMakeFiles/server_lib.dir/src/Response.cpp.o.d -o CMakeFiles/server_lib.dir/src/Response.cpp.o -c /home/ahai/project/project11/src/Response.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server_lib.dir/src/Response.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/Response.cpp.o -MF CMakeFiles/server_lib.dir/src/Response.cpp.o.d -o CMakeFiles/server_lib.dir/src/Response.cpp.o -c /home/ahai/HttpServer/src/Response.cpp
 
 CMakeFiles/server_lib.dir/src/Response.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/Response.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/project/project11/src/Response.cpp > CMakeFiles/server_lib.dir/src/Response.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/Response.cpp > CMakeFiles/server_lib.dir/src/Response.cpp.i
 
 CMakeFiles/server_lib.dir/src/Response.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/Response.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/project/project11/src/Response.cpp -o CMakeFiles/server_lib.dir/src/Response.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/Response.cpp -o CMakeFiles/server_lib.dir/src/Response.cpp.s
 
 # Object files for target server_lib
 server_lib_OBJECTS = \
@@ -125,7 +125,7 @@ libserver_lib.a: CMakeFiles/server_lib.dir/src/Request.cpp.o
 libserver_lib.a: CMakeFiles/server_lib.dir/src/Response.cpp.o
 libserver_lib.a: CMakeFiles/server_lib.dir/build.make
 libserver_lib.a: CMakeFiles/server_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahai/project/project11/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libserver_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libserver_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/server_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -138,6 +138,6 @@ CMakeFiles/server_lib.dir/clean:
 .PHONY : CMakeFiles/server_lib.dir/clean
 
 CMakeFiles/server_lib.dir/depend:
-	cd /home/ahai/project/project11/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahai/project/project11 /home/ahai/project/project11 /home/ahai/project/project11/build /home/ahai/project/project11/build /home/ahai/project/project11/build/CMakeFiles/server_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ahai/HttpServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahai/HttpServer /home/ahai/HttpServer /home/ahai/HttpServer/build /home/ahai/HttpServer/build /home/ahai/HttpServer/build/CMakeFiles/server_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server_lib.dir/depend
 

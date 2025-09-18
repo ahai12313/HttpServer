@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ahai/project/project11/include
+CXX_INCLUDES = -I/home/ahai/HttpServer/include
 
 CXX_FLAGS = -g -std=gnu++17
 

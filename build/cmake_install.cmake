@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahai/project/project11
+# Install script for directory: /home/ahai/HttpServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ahai/project/project11/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ahai/HttpServer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

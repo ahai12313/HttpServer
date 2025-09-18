@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ahai/project/project11/src/HttpServer.cpp" "CMakeFiles/server_lib.dir/src/HttpServer.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/HttpServer.cpp.o.d"
-  "/home/ahai/project/project11/src/Request.cpp" "CMakeFiles/server_lib.dir/src/Request.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/Request.cpp.o.d"
-  "/home/ahai/project/project11/src/Response.cpp" "CMakeFiles/server_lib.dir/src/Response.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/Response.cpp.o.d"
+  "/home/ahai/HttpServer/src/HttpServer.cpp" "CMakeFiles/server_lib.dir/src/HttpServer.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/HttpServer.cpp.o.d"
+  "/home/ahai/HttpServer/src/Request.cpp" "CMakeFiles/server_lib.dir/src/Request.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/Request.cpp.o.d"
+  "/home/ahai/HttpServer/src/Response.cpp" "CMakeFiles/server_lib.dir/src/Response.cpp.o" "gcc" "CMakeFiles/server_lib.dir/src/Response.cpp.o.d"
   )
 
 # Targets to which this target links.
