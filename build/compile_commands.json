@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/ahai/project/project11/build",
+  "command": "/usr/bin/g++  -I/home/ahai/project/project11/include -g -std=gnu++17 -o CMakeFiles/server_lib.dir/src/HttpServer.cpp.o -c /home/ahai/project/project11/src/HttpServer.cpp",
+  "file": "/home/ahai/project/project11/src/HttpServer.cpp"
+},
+{
+  "directory": "/home/ahai/project/project11/build",
+  "command": "/usr/bin/g++  -I/home/ahai/project/project11/include -g -std=gnu++17 -o CMakeFiles/server_lib.dir/src/Request.cpp.o -c /home/ahai/project/project11/src/Request.cpp",
+  "file": "/home/ahai/project/project11/src/Request.cpp"
+},
+{
+  "directory": "/home/ahai/project/project11/build",
+  "command": "/usr/bin/g++  -I/home/ahai/project/project11/include -g -std=gnu++17 -o CMakeFiles/server_lib.dir/src/Response.cpp.o -c /home/ahai/project/project11/src/Response.cpp",
+  "file": "/home/ahai/project/project11/src/Response.cpp"
+},
+{
+  "directory": "/home/ahai/project/project11/build",
+  "command": "/usr/bin/g++  -I/home/ahai/project/project11/include -g -std=gnu++17 -o CMakeFiles/server.dir/server.cpp.o -c /home/ahai/project/project11/server.cpp",
+  "file": "/home/ahai/project/project11/server.cpp"
+},
+{
+  "directory": "/home/ahai/project/project11/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/test_program.dir/tests/test_gtest.cpp.o -c /home/ahai/project/project11/tests/test_gtest.cpp",
+  "file": "/home/ahai/project/project11/tests/test_gtest.cpp"
+}
+]

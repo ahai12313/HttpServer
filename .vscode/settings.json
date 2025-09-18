@@ -1,0 +1,25 @@
+{
+    // 指定语言服务器为 Pylance（默认已是 Pylance，确保不是 Jedi）
+    "python.languageServer": "Pylance",
+    
+    // 开启自动补全，建议保持默认开启
+    "python.analysis.completeFunctionParens": true,
+    
+    // 开启自动导入建议
+    "python.analysis.autoImportCompletions": true,
+    
+    // 类型检查模式。强烈推荐设置为“basic”或“strict”以获得更好的错误提示
+    // - off: 关闭类型错误检查
+    // - basic: 进行基本的类型检查（推荐，平衡了性能和实用性）
+    // - strict: 进行最严格类型检查（适合重度类型注解项目）
+    "python.analysis.typeCheckingMode": "basic",
+    
+    // 索引第三方库以提供更准确的补全，会占用更多内存，但体验更好
+    "python.analysis.indexing": true,
+    
+    // 让 Pylance 额外扫描哪些目录下的文件以提供补全
+    "python.analysis.extraPaths": [],
+    
+    // 让 Pylance 忽略哪些目录，提升性能
+    "python.analysis.diagnosticIgnore": []
+}

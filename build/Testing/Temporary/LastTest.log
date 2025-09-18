@@ -1,0 +1,28 @@
+Start testing: Sep 14 01:19 CST
+----------------------------------------------------------
+1/1 Testing: MyTest
+1/1 Test: MyTest
+Command: "/home/ahai/project/project11/build/test_program"
+Directory: /home/ahai/project/project11/build
+"MyTest" start time: Sep 14 01:19 CST
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SimpleTest
+[ RUN      ] SimpleTest.BasicAssertion
+[       OK ] SimpleTest.BasicAssertion (0 ms)
+[----------] 1 test from SimpleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MyTest" end time: Sep 14 01:19 CST
+"MyTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 14 01:19 CST
