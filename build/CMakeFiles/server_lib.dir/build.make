@@ -111,11 +111,56 @@ CMakeFiles/server_lib.dir/src/Response.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/Response.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/Response.cpp -o CMakeFiles/server_lib.dir/src/Response.cpp.s
 
+CMakeFiles/server_lib.dir/src/JsonValue.cpp.o: CMakeFiles/server_lib.dir/flags.make
+CMakeFiles/server_lib.dir/src/JsonValue.cpp.o: ../src/JsonValue.cpp
+CMakeFiles/server_lib.dir/src/JsonValue.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server_lib.dir/src/JsonValue.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/JsonValue.cpp.o -MF CMakeFiles/server_lib.dir/src/JsonValue.cpp.o.d -o CMakeFiles/server_lib.dir/src/JsonValue.cpp.o -c /home/ahai/HttpServer/src/JsonValue.cpp
+
+CMakeFiles/server_lib.dir/src/JsonValue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/JsonValue.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/JsonValue.cpp > CMakeFiles/server_lib.dir/src/JsonValue.cpp.i
+
+CMakeFiles/server_lib.dir/src/JsonValue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/JsonValue.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/JsonValue.cpp -o CMakeFiles/server_lib.dir/src/JsonValue.cpp.s
+
+CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o: CMakeFiles/server_lib.dir/flags.make
+CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o: ../src/RequestHandler.cpp
+CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o -MF CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o.d -o CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o -c /home/ahai/HttpServer/src/RequestHandler.cpp
+
+CMakeFiles/server_lib.dir/src/RequestHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/RequestHandler.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/RequestHandler.cpp > CMakeFiles/server_lib.dir/src/RequestHandler.cpp.i
+
+CMakeFiles/server_lib.dir/src/RequestHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/RequestHandler.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/RequestHandler.cpp -o CMakeFiles/server_lib.dir/src/RequestHandler.cpp.s
+
+CMakeFiles/server_lib.dir/src/Router.cpp.o: CMakeFiles/server_lib.dir/flags.make
+CMakeFiles/server_lib.dir/src/Router.cpp.o: ../src/Router.cpp
+CMakeFiles/server_lib.dir/src/Router.cpp.o: CMakeFiles/server_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server_lib.dir/src/Router.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_lib.dir/src/Router.cpp.o -MF CMakeFiles/server_lib.dir/src/Router.cpp.o.d -o CMakeFiles/server_lib.dir/src/Router.cpp.o -c /home/ahai/HttpServer/src/Router.cpp
+
+CMakeFiles/server_lib.dir/src/Router.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_lib.dir/src/Router.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahai/HttpServer/src/Router.cpp > CMakeFiles/server_lib.dir/src/Router.cpp.i
+
+CMakeFiles/server_lib.dir/src/Router.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_lib.dir/src/Router.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahai/HttpServer/src/Router.cpp -o CMakeFiles/server_lib.dir/src/Router.cpp.s
+
 # Object files for target server_lib
 server_lib_OBJECTS = \
 "CMakeFiles/server_lib.dir/src/HttpServer.cpp.o" \
 "CMakeFiles/server_lib.dir/src/Request.cpp.o" \
-"CMakeFiles/server_lib.dir/src/Response.cpp.o"
+"CMakeFiles/server_lib.dir/src/Response.cpp.o" \
+"CMakeFiles/server_lib.dir/src/JsonValue.cpp.o" \
+"CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o" \
+"CMakeFiles/server_lib.dir/src/Router.cpp.o"
 
 # External object files for target server_lib
 server_lib_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ server_lib_EXTERNAL_OBJECTS =
 libserver_lib.a: CMakeFiles/server_lib.dir/src/HttpServer.cpp.o
 libserver_lib.a: CMakeFiles/server_lib.dir/src/Request.cpp.o
 libserver_lib.a: CMakeFiles/server_lib.dir/src/Response.cpp.o
+libserver_lib.a: CMakeFiles/server_lib.dir/src/JsonValue.cpp.o
+libserver_lib.a: CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o
+libserver_lib.a: CMakeFiles/server_lib.dir/src/Router.cpp.o
 libserver_lib.a: CMakeFiles/server_lib.dir/build.make
 libserver_lib.a: CMakeFiles/server_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libserver_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahai/HttpServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libserver_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/server_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server_lib.dir/link.txt --verbose=$(VERBOSE)
 

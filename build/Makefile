@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/ahai/HttpServer/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -153,17 +143,17 @@ server/fast:
 .PHONY : server/fast
 
 #=============================================================================
-# Target rules for targets named test_program
+# Target rules for targets named test
 
 # Build rule for target.
-test_program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_program
-.PHONY : test_program
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-test_program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_program.dir/build.make CMakeFiles/test_program.dir/build
-.PHONY : test_program/fast
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 server.o: server.cpp.o
 .PHONY : server.o
@@ -213,6 +203,30 @@ src/HttpServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/HttpServer.cpp.s
 .PHONY : src/HttpServer.cpp.s
 
+src/JsonValue.o: src/JsonValue.cpp.o
+.PHONY : src/JsonValue.o
+
+# target to build an object file
+src/JsonValue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/JsonValue.cpp.o
+.PHONY : src/JsonValue.cpp.o
+
+src/JsonValue.i: src/JsonValue.cpp.i
+.PHONY : src/JsonValue.i
+
+# target to preprocess a source file
+src/JsonValue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/JsonValue.cpp.i
+.PHONY : src/JsonValue.cpp.i
+
+src/JsonValue.s: src/JsonValue.cpp.s
+.PHONY : src/JsonValue.s
+
+# target to generate assembly for a file
+src/JsonValue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/JsonValue.cpp.s
+.PHONY : src/JsonValue.cpp.s
+
 src/Request.o: src/Request.cpp.o
 .PHONY : src/Request.o
 
@@ -236,6 +250,30 @@ src/Request.s: src/Request.cpp.s
 src/Request.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/Request.cpp.s
 .PHONY : src/Request.cpp.s
+
+src/RequestHandler.o: src/RequestHandler.cpp.o
+.PHONY : src/RequestHandler.o
+
+# target to build an object file
+src/RequestHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o
+.PHONY : src/RequestHandler.cpp.o
+
+src/RequestHandler.i: src/RequestHandler.cpp.i
+.PHONY : src/RequestHandler.i
+
+# target to preprocess a source file
+src/RequestHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/RequestHandler.cpp.i
+.PHONY : src/RequestHandler.cpp.i
+
+src/RequestHandler.s: src/RequestHandler.cpp.s
+.PHONY : src/RequestHandler.s
+
+# target to generate assembly for a file
+src/RequestHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/RequestHandler.cpp.s
+.PHONY : src/RequestHandler.cpp.s
 
 src/Response.o: src/Response.cpp.o
 .PHONY : src/Response.o
@@ -261,29 +299,53 @@ src/Response.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/Response.cpp.s
 .PHONY : src/Response.cpp.s
 
-tests/test_gtest.o: tests/test_gtest.cpp.o
-.PHONY : tests/test_gtest.o
+src/Router.o: src/Router.cpp.o
+.PHONY : src/Router.o
 
 # target to build an object file
-tests/test_gtest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_program.dir/build.make CMakeFiles/test_program.dir/tests/test_gtest.cpp.o
-.PHONY : tests/test_gtest.cpp.o
+src/Router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/Router.cpp.o
+.PHONY : src/Router.cpp.o
 
-tests/test_gtest.i: tests/test_gtest.cpp.i
-.PHONY : tests/test_gtest.i
+src/Router.i: src/Router.cpp.i
+.PHONY : src/Router.i
 
 # target to preprocess a source file
-tests/test_gtest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_program.dir/build.make CMakeFiles/test_program.dir/tests/test_gtest.cpp.i
-.PHONY : tests/test_gtest.cpp.i
+src/Router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/Router.cpp.i
+.PHONY : src/Router.cpp.i
 
-tests/test_gtest.s: tests/test_gtest.cpp.s
-.PHONY : tests/test_gtest.s
+src/Router.s: src/Router.cpp.s
+.PHONY : src/Router.s
 
 # target to generate assembly for a file
-tests/test_gtest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_program.dir/build.make CMakeFiles/test_program.dir/tests/test_gtest.cpp.s
-.PHONY : tests/test_gtest.cpp.s
+src/Router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_lib.dir/build.make CMakeFiles/server_lib.dir/src/Router.cpp.s
+.PHONY : src/Router.cpp.s
+
+tests/test.o: tests/test.cpp.o
+.PHONY : tests/test.o
+
+# target to build an object file
+tests/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
+
+tests/test.i: tests/test.cpp.i
+.PHONY : tests/test.i
+
+# target to preprocess a source file
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
+
+tests/test.s: tests/test.cpp.s
+.PHONY : tests/test.s
+
+# target to generate assembly for a file
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -293,25 +355,33 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... server"
 	@echo "... server_lib"
-	@echo "... test_program"
+	@echo "... test"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
 	@echo "... src/HttpServer.o"
 	@echo "... src/HttpServer.i"
 	@echo "... src/HttpServer.s"
+	@echo "... src/JsonValue.o"
+	@echo "... src/JsonValue.i"
+	@echo "... src/JsonValue.s"
 	@echo "... src/Request.o"
 	@echo "... src/Request.i"
 	@echo "... src/Request.s"
+	@echo "... src/RequestHandler.o"
+	@echo "... src/RequestHandler.i"
+	@echo "... src/RequestHandler.s"
 	@echo "... src/Response.o"
 	@echo "... src/Response.i"
 	@echo "... src/Response.s"
-	@echo "... tests/test_gtest.o"
-	@echo "... tests/test_gtest.i"
-	@echo "... tests/test_gtest.s"
+	@echo "... src/Router.o"
+	@echo "... src/Router.i"
+	@echo "... src/Router.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
 .PHONY : help
 
 

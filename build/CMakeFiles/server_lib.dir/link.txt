@@ -1,2 +1,2 @@
-/usr/bin/ar qc libserver_lib.a CMakeFiles/server_lib.dir/src/HttpServer.cpp.o CMakeFiles/server_lib.dir/src/Request.cpp.o CMakeFiles/server_lib.dir/src/Response.cpp.o
+/usr/bin/ar qc libserver_lib.a CMakeFiles/server_lib.dir/src/HttpServer.cpp.o CMakeFiles/server_lib.dir/src/Request.cpp.o CMakeFiles/server_lib.dir/src/Response.cpp.o CMakeFiles/server_lib.dir/src/JsonValue.cpp.o CMakeFiles/server_lib.dir/src/RequestHandler.cpp.o CMakeFiles/server_lib.dir/src/Router.cpp.o
 /usr/bin/ranlib libserver_lib.a
