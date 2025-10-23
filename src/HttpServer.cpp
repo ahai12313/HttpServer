@@ -20,12 +20,14 @@
 #include <thread>
 #include <unistd.h>
 
+#include "JsonValue.h"
+#include "split.h"
+
 class HttpServer::Impl {
   public:
     Impl(const Config &config) : port_(config.port), server_fd_(-1) {
         root_dir_ = fs::absolute(config.root_dir);
         if (!fs::is_directory(root_dir_)) {
-            std::cout << root_dir_ << " not a dir\n";
             throw std::runtime_error("Path is not a directory: " + root_dir_);
         }
     }
@@ -104,7 +106,6 @@ void HttpServer::Impl::run() {
         socklen_t client_len = sizeof(client_addr);
         int client_fd =
             accept(server_fd_, (sockaddr *)&client_addr, &client_len);
-
         if (client_fd < 0) {
             int err = errno;
             switch (err) {
@@ -157,6 +158,8 @@ Request HttpServer::Impl::parse_request(int client_fd,
 
     stream >> req.method >> req.path >> req.version;
 
+    req.splited_path = split_path(req.path, '/');
+
     std::transform(req.method.begin(), req.method.end(), req.method.begin(),
                    ::toupper);
 
@@ -185,9 +188,13 @@ Request HttpServer::Impl::parse_request(int client_fd,
     if (req.headers.find("Content-Length") != req.headers.end()) {
         size_t content_length = std::stoul(req.headers["Content-Length"]);
         req.body.resize(content_length);
-        stream.read(&req.body[0], content_length);
+        stream.read(reinterpret_cast<char*>(req.body.data()), content_length);
+        if (req.isBodyLikelyString()) {
+            req.body_str = std::string(req.body.begin(), req.body.end());
+        }
+        req.json_value = JsonValue::parse(req.body_str);
     }
-    // req.info();
+
     return req;
 }
 

@@ -9,24 +9,28 @@ add_library(server_lib
     src/HttpServer.cpp
     src/Request.cpp
     src/Response.cpp
+    src/JsonValue.cpp
+    src/RequestHandler.cpp
+    src/Router.cpp
 )
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/utils)
 
 target_include_directories(
     server_lib PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )
 
-# target_link_directories(server_lib PUBLIC Threads::Threads)
-
 add_executable(server server.cpp)
+add_executable(test tests/test.cpp)
 
 target_link_libraries(server PRIVATE server_lib)
+target_link_libraries(test PRIVATE server_lib)
 
-# install(TARGETS server DESTINATION bin)
-# install(DIRECTORY include/ DESTINATION include)
-
-find_package(GTest REQUIRED)
-enable_testing()
-add_executable(test_program tests/test_gtest.cpp)
-target_link_libraries(test_program PRIVATE GTest::gtest GTest::gtest_main)
-add_test(NAME MyTest COMMAND test_program)
+set(CMAKE_BUILD_TYPE Debug)
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_compile_definitions(SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_DEBUG)
+else()
+    add_compile_definitions(SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_INFO)
+endif()

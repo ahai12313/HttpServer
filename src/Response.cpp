@@ -63,12 +63,12 @@ void Response::send_headers() {
     headers_sent_ = true;
 }
 
-void Response::send(const std::string &body) {
+void Response::send(const std::string &body_str) {
 
     std::string response = "HTTP/1.1 " + std::to_string(status_code_) + " " +
                            status_message() + "\r\n";
 
-    headers_["Content-Length"] = std::to_string(body.size());
+    headers_["Content-Length"] = std::to_string(body_str.size());
 
     for (const auto &[key, value] : headers_) {
         response += key + ": " + value + "\r\n";
@@ -76,7 +76,7 @@ void Response::send(const std::string &body) {
 
     response += "\r\n";
 
-    response += body;
+    response += body_str;
 
     ::send(client_fd_, response.c_str(), response.size(), 0);
 }

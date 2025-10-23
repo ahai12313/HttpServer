@@ -1,5 +1,5 @@
-#ifndef RESPONCE_H
-#define RESPONCE_H
+#ifndef RESPONSE_H
+#define RESPONSE_H
 
 #include <spdlog/spdlog.h>
 #include <string>
@@ -22,7 +22,7 @@ class Response {
     Response &send_directory_listing(const std::string &path,
                                      const std::string &root_dir);
 
-    void send(const std::string &body);
+    void send(const std::string &body_str);
     Response &end(const std::string &content = "");
 
   private:
